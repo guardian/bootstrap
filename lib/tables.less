@@ -25,17 +25,17 @@ table {
     padding-top: 9px;
     font-weight: bold;
     vertical-align: middle;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid @borderColor;
   }
   td {
     vertical-align: top;
   }
   th + th,
   td + td {
-    border-left: 1px solid #ddd;
+    border-left: 1px solid @borderColor;
   }
   tr + tr td {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid @borderColor;
   }
   tbody tr:first-child td:first-child {
     .border-radius(4px 0 0 0);
