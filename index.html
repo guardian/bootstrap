@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter, for Guardian</title>
+    <title>Twitter Bootstrap for the Guardian</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -54,7 +54,6 @@
             <li><a href="#alerts">Alerts</a></li>
             <li><a href="#popovers">Popovers</a></li>
             <li><a href="#javascript">Javascript</a></li>
-            <li><a href="#less">Less</a></li>
           </ul>
         </div>
       </div>
@@ -65,9 +64,10 @@
     <header class="jumbotron masthead" id="overview">
       <div class="inner">
         <div class="container">
-          <h1>Bootstrap, from Twitter</h1>
+          <h1>Twitter Bootstrap for the Guardian</h1>
           <p class="lead">
             Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites.<br />
+			This version has been modified by the Guardian to give a more guardian look and feel<br />
             It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.<br />
           </p>
           <p><strong>Nerd alert:</strong> Bootstrap is <a href="#less" title="Read about using Bootstrap with Less">built with Less</a> and was designed to work out of the gate with modern browsers in mind.</p>
@@ -80,26 +80,18 @@
     <div class="quickstart">
       <div class="container">
         <div class="row">
-          <div class="span5">
+          <div class="span6">
             <h6>Hotlink the CSS</h6>
             <p>For the quickest and easiest start, just copy this snippet into your webpage.</p>
             <form>
-              <textarea class="copy-code" rows="1">&lt;link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css"></textarea>
+              <textarea class="copy-code" rows="1">&lt;link rel="stylesheet" href="http://guardian.github.com/bootstrap/1.3.0/bootstrap.min.css"></textarea>
             </form>
           </div>
-          <div class="span5">
-            <h6>Use it with Less</h6>
-            <p>A fan of using Less? No problem, just clone the repo and add these lines:</p>
-            <form>
-              <textarea class="copy-code" rows="2">&lt;link rel="stylesheet/less" href="/path/to/bootstrap.less"&gt;
-&lt;script src="/path/to/less.js"&gt;&lt;/script&gt;</textarea>
-            </form>
-          </div>
-          <div class="span5">
+          <div class="span6">
             <h6>Fork on GitHub</h6>
-            <p>Download, fork, pull, file issues, and more with the official Bootstrap repo on Github.</p>
-            <p><a target="_blank" href="https://github.com/twitter/bootstrap" class="btn primary">Bootstrap on GitHub &raquo;</a></p>
-            <p class="current-version">Currently <a href="https://github.com/twitter/bootstrap/wiki/Changelog">v1.3.0</a></p>
+            <p>Download, fork, pull, file issues, and more with the official Guardian Bootstrap repo on Github.</p>
+            <p><a target="_blank" href="https://github.com/twitter/bootstrap" class="btn primary">Guardian Bootstrap on GitHub &raquo;</a></p>
+            <p class="current-version">Currently <a href="https://github.com/guardian/bootstrap/wiki/Changelog">v1.3.0</a></p>
           </div>
         </div><!-- /row -->
       </div>
@@ -175,33 +167,29 @@
 ================================================== -->
 <section id="grid-system">
   <div class="page-header">
-    <h1>Grid system <small>Rock the standard 940px or roll your own</small></h1>
+    <h1>Grid system <small>Rock the standard 960px or roll your own</small></h1>
   </div>
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Default grid</h2>
-      <p>The default grid system provided as part of Bootstrap is a 940px wide 16-column grid. It’s a flavor of the popular 960 grid system, but without the additional margin/padding on the left and right sides.</p>
+      <p>The default grid system provided as part of the Guardian Bootstrap is a 960px wide 12-column grid. </p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h3>Example grid markup</h3>
-      <p>As shown here, a basic layout can be created with two "columns," each spanning a number of the 16 foundational columns we defined as part of our grid system. See the examples below for more variations.</p>
+      <p>As shown here, a basic layout can be created with two "columns," each spanning a number of the 12 foundational columns we defined as part of our grid system. See the examples below for more variations.</p>
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
-  &lt;div class="span6"&gt;
+  &lt;div class="span-one-third"&gt;
     ...
   &lt;/div&gt;
-  &lt;div class="span10"&gt;
+  &lt;div class="span-two-thirds"&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
     </div>
   </div><!-- /row -->
-  <div class="row show-grid" title="16 column layout">
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
+  <div class="row show-grid" title="12 column layout">
     <div class="span1">1</div>
     <div class="span1">1</div>
     <div class="span1">1</div>
@@ -215,9 +203,7 @@
     <div class="span1">1</div>
     <div class="span1">1</div>
   </div><!-- /row -->
-  <div class="row show-grid" title="8 column layout">
-    <div class="span2">2</div>
-    <div class="span2">2</div>
+  <div class="row show-grid" title="6 column layout">
     <div class="span2">2</div>
     <div class="span2">2</div>
     <div class="span2">2</div>
@@ -226,18 +212,15 @@
     <div class="span2">2</div>
   </div><!-- /row -->
   <div class="row show-grid" title="Example uncommon layout">
-    <div class="span3">3</div>
-    <div class="span3">3</div>
-    <div class="span3">3</div>
-    <div class="span3">3</div>
-    <div class="span3">3</div>
-    <div class="span1 column">1</div>
+    <div class="span5">5</div>
+    <div class="span5">5</div>
+    <div class="span2 column">2</div>
   </div><!-- /row -->
   <div class="row show-grid" title="Four column layout">
-    <div class="span4">4</div>
-    <div class="span4">4</div>
-    <div class="span4">4</div>
-    <div class="span4">4</div>
+    <div class="span3">3</div>
+    <div class="span3">3</div>
+    <div class="span3">3</div>
+    <div class="span3">3</div>
   </div><!-- /row -->
   <div class="row show-grid" title="Default three column layout">
     <div class="span-one-third">1/3</div>
@@ -249,20 +232,20 @@
     <div class="span-two-thirds">2/3</div>
   </div><!-- /row -->
   <div class="row show-grid" title="Irregular three column layout">
-    <div class="span4">4</div>
-    <div class="span6">6</div>
-    <div class="span6">6</div>
+    <div class="span2">2</div>
+    <div class="span5">5</div>
+    <div class="span5">5</div>
   </div><!-- /row -->
   <div class="row show-grid" title="Half and half">
-    <div class="span8">8</div>
-    <div class="span8">8</div>
+    <div class="span6">6</div>
+    <div class="span6">6</div>
   </div><!-- /row -->
   <div class="row show-grid" title="Example uncommon two-column layout">
-    <div class="span5">5</div>
-    <div class="span11">11</div>
+    <div class="span3">3</div>
+    <div class="span9">9</div>
   </div><!-- /row -->
   <div class="row show-grid" title="Unnecessary single column layout">
-    <div class="span16">16</div>
+    <div class="span12">12</div>
   </div><!-- /row -->
 
   <br>
@@ -270,40 +253,40 @@
   <h2>Offsetting columns</h2>
   <div class="row show-grid">
     <div class="span4">4</div>
-    <div class="span8 offset4">8 offset 4</div>
+    <div class="span4 offset4">4 offset 4</div>
   </div><!-- /row -->
   <div class="row show-grid">
     <div class="span-one-third offset-two-thirds">1/3 offset 2/3s</div>
   </div><!-- /row -->
   <div class="row show-grid">
-    <div class="span4 offset4">4 offset 4</div>
-    <div class="span4 offset4">4 offset 4</div>
+    <div class="span3 offset3">3 offset 3</div>
+    <div class="span3 offset3">3 offset 3</div>
   </div><!-- /row -->
   <div class="row show-grid">
-    <div class="span5 offset3">5 offset 3</div>
-    <div class="span5 offset3">5 offset 3</div>
+    <div class="span4 offset2">4 offset 2</div>
+    <div class="span4 offset2">4 offset 2</div>
   </div><!-- /row -->
   <div class="row show-grid">
-    <div class="span10 offset6">10 offset 6</div>
+    <div class="span8 offset4">8 offset 4</div>
   </div><!-- /row -->
 
   <br>
 
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Nesting columns</h2>
       <p>Nest your content if you must by creating a <code>.row</code> within an existing column.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h4>Example of nested columns</h4>
       <div class="row show-grid">
-        <div class="span12">
+        <div class="span-two-thirds">
           Level 1 of column
           <div class="row show-grid">
-            <div class="span6">
+            <div class="span-one-third">
               Level 2
             </div>
-            <div class="span6">
+            <div class="span-one-third">
               Level 2
             </div>
           </div>
@@ -311,7 +294,7 @@
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
-  &lt;div class="span12"&gt;
+  &lt;div class="span-two-thirds"&gt;
     Level 1 of column
     &lt;div class="row"&gt;
       &lt;div class="span6"&gt;
@@ -329,54 +312,6 @@
 
   <br>
 
-  <div class="row">
-    <div class="span4">
-      <h2>Roll your own grid</h2>
-      <p>Built into Bootstrap are a handful of variables for customizing the default 940px grid system. With a bit of customization, you can modify the size of columns, their gutters, and the container they reside in.</p>
-    </div>
-    <div class="span12">
-      <h3>Inside the grid</h3>
-      <p>The variables needed to modify the grid system currently all reside in <code>variables.less</code>.</p>
-      <table class="zebra-striped">
-        <thead>
-          <tr>
-            <th>Variable</th>
-            <th>Default value</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>@gridColumns</code></td>
-            <td>16</td>
-            <td>The number of columns within the grid</td>
-          </tr>
-          <tr>
-            <td><code>@gridColumnWidth</code></td>
-            <td>40px</td>
-            <td>The width of each column within the grid</td>
-          </tr>
-          <tr>
-            <td><code>@gridGutterWidth</code></td>
-            <td>20px</td>
-            <td>The negative space between each column</td>
-          </tr>
-          <tr>
-            <td><code>@siteWidth</code></td>
-            <td><em>Computed sum of all columns and gutters</em></td>
-            <td>We use some basic match to count the number of columns and gutters and set the width of the <code>.fixed-container()</code> mixin.</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Now to customize</h3>
-      <p>Modifying the grid means changing the three <code>@grid-*</code> variables and recompiling the Less files.</p>
-      <p>Bootstrap comes equipped to handle a grid system with up to 24 columns; the default is just 16. Here's how your grid variables would look customized to a 24-column grid.</p>
-      <pre class="prettyprint linenums">@gridColumns:       24;
-@gridColumnWidth:   20px;
-@gridGutterWidth:   20px;</pre>
-      <p>Once recompiled, you'll be set!</p>
-    </div>
-  </div>
 </section>
 
 
@@ -389,9 +324,9 @@
   </div>
 
   <div class="row">
-    <div class="span8">
+    <div class="span6">
       <h2>Fixed layout</h2>
-      <p>The default and simple 940px-wide, centered layout for just about any website or page provided by a single <code>&lt;div.container&gt;</code>.</p>
+      <p>The default and simple 960px-wide, centered layout for just about any website or page provided by a single <code>&lt;div.container&gt;</code>.</p>
       <div class="mini-layout">
         <div class="mini-layout-body"></div>
       </div>
@@ -403,7 +338,7 @@
 &lt;/body&gt;
 </pre>
     </div><!-- /col -->
-    <div class="span8">
+    <div class="span6">
       <h2>Fluid layout</h2>
       <p>An alternative, flexible fluid page structure with min- and max-widths and a left-hand sidebar. Great for apps and docs.</p>
       <div class="mini-layout fluid">
@@ -437,13 +372,13 @@
 
   <!-- Headings & Paragraph Copy -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Headings &amp; copy</h2>
       <p>A standard typographic hierarchy for structuring your webpages.</p>
       <p>The entire typographic grid is based on two Less variables in our variables.less file: <code>@basefont</code> and <code>@baseline</code>. The first is the base font-size used throughout and the second is the base line-height.</p>
       <p>We use those variables, and some math, to create the margins, paddings, and line-heights of all our type and more.</p>
     </div>
-    <div class="span4">
+    <div class="span-one-third">
       <h1>h1. Heading 1</h1>
       <h2>h2. Heading 2</h2>
       <h3>h3. Heading 3</h3>
@@ -451,7 +386,7 @@
       <h5>h5. Heading 5</h5>
       <h6>h6. Heading 6</h6>
     </div>
-    <div class="span8">
+    <div class="span-one-third">
       <h3>Example paragraph</h3>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
       <h1>Example heading <small>Has sub-heading&hellip;</small></h1>
@@ -460,7 +395,7 @@
 
   <!-- Misc Elements -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Misc. elements</h2>
       <p>Using emphasis, addresses, &amp; abbreviations</p>
       <p>
@@ -470,7 +405,7 @@
         <code>&lt;abbr&gt;</code>
       </p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h3>When to use</h3>
       <p>Emphasis tags (<code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>) should be used to indicate additional importance or emphasis of a word or phrase relative to its surrounding copy. Use <code>&lt;strong&gt;</code> for importance and <code>&lt;em&gt;</code> for <em>stress</em> emphasis.</p>
       <h3>Emphasis in a paragraph</h3>
@@ -480,7 +415,7 @@
       <p>The <code>&lt;address&gt;</code> element is used for contact information for its nearest ancestor, or the entire body of work. Here are two examples of how it could be used:</p>
 
       <div class="row">
-        <div class="span4">
+        <div class="span-one-third">
           <address>
             <strong>Twitter, Inc.</strong><br />
             795 Folsom Ave, Suite 600<br />
@@ -488,7 +423,7 @@
             <abbr title="Phone">P:</abbr> (123) 456-7890
           </address>
         </div>
-        <div class="span4">
+        <div class="span-one-third">
           <address>
             <strong>Full Name</strong><br />
             <a mailto="">first.last@gmail.com</a>
@@ -504,7 +439,7 @@
 
   <!-- Blockquotes -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Blockquotes</h2>
       <p>
         <code>&lt;blockquote&gt;</code>
@@ -512,7 +447,7 @@
         <code>&lt;small&gt;</code>
       </p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h3>How to quote</h3>
       <p>To include a blockquote, wrap <code>&lt;blockquote&gt;</code> around <code>&lt;p&gt;</code> and <code>&lt;small&gt;</code> tags. Use the <code>&lt;small&gt;</code> element to cite your source and you'll get an em dash <code>&amp;mdash;</code> before it.</p>
       <blockquote>
@@ -530,7 +465,7 @@
 
   <h2>Lists</h2>
   <div class="row">
-    <div class="span4">
+    <div class="span3">
       <h4>Unordered <code>&lt;ul&gt;</code></h4>
       <ul>
         <li>Lorem ipsum dolor sit amet</li>
@@ -550,7 +485,7 @@
         <li>Eget porttitor lorem</li>
       </ul>
     </div>
-    <div class="span4">
+    <div class="span3">
       <h4>Unstyled <code>&lt;ul.unstyled&gt;</code></h4>
       <ul class="unstyled">
         <li>Lorem ipsum dolor sit amet</li>
@@ -570,7 +505,7 @@
         <li>Eget porttitor lorem</li>
       </ul>
     </div>
-    <div class="span4">
+    <div class="span3">
       <h4>Ordered <code>&lt;ol&gt;</code></h4>
       <ol>
         <li>Lorem ipsum dolor sit amet</li>
@@ -583,7 +518,7 @@
         <li>Eget porttitor lorem</li>
       </ol>
     </div>
-    <div class="span4">
+    <div class="span3">
       <h4>Description <code>dl</code></h4>
       <dl>
         <dt>Description lists</dt>
@@ -600,7 +535,7 @@
 
   <!-- Code -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Code</h2>
       <p>
         <code>&lt;code&gt;</code>
@@ -608,7 +543,7 @@
       </p>
       <p>Pimp your code in style with two simple tags. For even more awesomeness through javascript, drop in Google's code prettify library and you're set.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h3>Presenting code</h3>
       <p>Code, blocks of or just snippets inline, can be displayed with style just by wrapping in the right tag. For blocks of code spanning multiple lines, use the <code>&lt;pre&gt;</code> element. For inline code, use the <code>&lt;code&gt;</code> element.</p>
       <table class="zebra-striped">
@@ -651,14 +586,14 @@
 
   <!-- Labels -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Inline labels</h2>
       <p>
         <code>&lt;span class="label"&gt;</code>
       </p>
       <p>Call attention to or flag any phrase in your body text.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h3>Label anything</h3>
       <p>Ever needed one of those fancy <span class="label success">New!</span> or <span class="label important">Important</span> flags when writing code? Well, now you have them. Here's what's included by default:</p>
       <table class="zebra-striped">
@@ -726,13 +661,13 @@
   </div>
   <!-- Table structure -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Media grid</h2>
       <p>Display thumbnails of varying sizes on pages with a low HTML footprint and minimal styles.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h3>Example thumbnails</h3>
-      <p>Thumbnails in the <code>.media-grid</code> can be any size, but they work best when mapped directly to the built-in Bootstrap grid system. Image widths like 90, 210, and 330 combine with a few pixels of padding to equal the <code>.span2</code>, <code>.span4</code>, and <code>.span6</code> column sizes.</p>
+      <p>Thumbnails in the <code>.media-grid</code> can be any size, but they work best when mapped directly to the built-in Bootstrap grid system. Image widths like 90, 210, and 330 combine with a few pixels of padding to equal the <code>.span2</code>, <code>.span-one-third</code>, and <code>.span6</code> column sizes.</p>
       <h4>Large</h4>
       <ul class="media-grid">
         <li>
@@ -822,7 +757,7 @@
   </div>
   <!-- Table structure -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Building tables</h2>
       <p>
         <code>&lt;table&gt;</code>
@@ -838,7 +773,7 @@
       <p>Always wrap your column headers in a <code>&lt;thead&gt;</code> such that hierarchy is <code>&lt;thead&gt;</code> > <code>&lt;tr&gt;</code> > <code>&lt;th&gt;</code>.</p>
       <p>Similar to the column headers, all your table’s body content should be wrapped in a <code>&lt;tbody&gt;</code> so your hierarchy is <code>&lt;tbody&gt;</code> > <code>&lt;tr&gt;</code> > <code>&lt;td&gt;</code>.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h3>Example: Default table styles</h3>
       <p>All tables will be automatically styled with only the essential borders to ensure readability and maintain structure. No need to add extra classes or attributes.</p>
       <table>
@@ -967,11 +902,11 @@
     <h1>Forms</h1>
   </div>
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Default styles</h2>
       <p>All forms are given default styles to present them in a readable and scalable way. Styles are provided for text inputs, select lists, textareas, radio buttons and checkboxes, and buttons.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <form>
         <fieldset>
           <legend>Example form legend</legend>
@@ -1167,11 +1102,11 @@
   <br />
 
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Stacked forms</h2>
       <p>Add <code>.form-stacked</code> to your form’s HTML and you’ll have labels on top of their fields instead of to their left. This works great if your forms are short or you have two columns of inputs for heavier forms.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <form action="" class="form-stacked">
         <fieldset>
           <legend>Example form legend</legend>
@@ -1234,12 +1169,12 @@
   </div><!-- /row -->
 
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Form field sizes</h2>
       <p>Customize any form <code>input</code>, <code>select</code>, or <code>textarea</code> width by adding just a few classes to your markup.</p>
       <p>As of v1.3.0, we have added the grid-based sizing classes for form elements. <strong>Please use the these over the existing <code>.mini</code>, <code>.small</code>, etc classes.</strong></p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <form action="">
         <div class="clearfix"><input class="span2" id="" name="" type="text" placeholder=".span2" /></div>
         <div class="clearfix"><input class="span3" id="" name="" type="text" placeholder=".span3" /></div>
@@ -1257,12 +1192,12 @@
   </div>
 
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Buttons</h2>
       <p>As a convention, buttons are used for actions while links are used for objects. For instance, "Download" could be a button and "recent activity" could be a link.</p>
       <p>All buttons default to a light gray style, but a number of functional classes can be applied for different color styles. These classes include a blue <code>.primary</code> class, a light-blue <code>.info</code> class, a green <code>.success</code> class, and a red <code>.danger</code> class.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <h3>Example buttons</h3>
       <p>Button styles can be applied to anything with the <code>.btn</code> applied. Typically you’ll want to apply these to only <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and select <code>&lt;input&gt;</code> elements. Here’s how it looks:</p>
       <div class="well" style="padding: 14px 19px;">
@@ -1342,15 +1277,15 @@
   </div><!-- /topbar-wrapper -->
 
   <div class="row">
-    <div class="span5">
+    <div class="span-one-third">
       <h4>What is it</h4>
       <p>Our topbar is a fixed bar that houses a website’s logo or name, primary navigation, and search form.</p>
     </div>
-    <div class="span5">
+    <div class="span-one-third">
       <h4>Customizable</h4>
       <p>All elements within, and the entire topbar as well, are optional. You can choose to include a logo/name, nav, search, and a secondary nav&mdash;or any combination of that.</p>
     </div>
-    <div class="span6">
+    <div class="span-one-third">
       <h4>Dropdowns included</h4>
       <p>As part of the main navigation, we’ve included the ability for you to add dropdowns to your nav. Check out the secondary nav above (right aligned) to see how it’s done. Dropdowns <code>li</code> tags also support <code>.active</code> for showing current page selection.</p>
     </div>
@@ -1360,12 +1295,12 @@
   <br />
 
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Tabs and pills</h2>
       <p>Create simple secondary navigation with a <code>&lt;ul&gt;</code>. Swap between tabs or pills by adding the appropriate class.</p>
       <p>Great for sub-sections of content like our account settings pages and user timelines for toggling between pages of like content. Available in tabbed or pill styles.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <ul class="tabs">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">Profile</a></li>
@@ -1412,11 +1347,11 @@
 
   <!-- Breadcrumbs -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Breadcrumbs</h2>
       <p>Breadcrumb navigation is used as a way to show users where they are within an app or a site, but not for primary navigation.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <ul class="breadcrumb">
         <li class="active">Home</li>
       </ul>
@@ -1448,11 +1383,11 @@
 
   <!-- Pagination -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Pagination</h2>
       <p>Ultra simplistic and minimally styled pagination inspired by Rdio. The large block is hard to miss, easily scalable, and provides large click areas.</p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <div class="pagination">
         <ul>
           <li class="prev disabled"><a href="#">&larr; Previous</a></li>
@@ -1522,13 +1457,13 @@
   </div>
   <!-- Basic alert messages -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Basic alerts</h2>
       <p><code>.alert-message</code></p>
       <p>One-line messages for highlighting the failure, possible failure, or success of an action. Particularly useful for forms.</p>
       <p><a class="btn js-btn" href="./javascript.html#alerts">Get the javascript &raquo;</a></p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <div class="alert-message warning">
         <a class="close" href="#">&times;</a>
         <p><strong>Holy guacamole!</strong> Best check yo self, you’re not looking too good.</p>
@@ -1557,13 +1492,13 @@
   </div><!-- /row -->
   <!-- Block messages -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Block messages</h2>
       <p><code>.alert-message.block-message</code></p>
       <p>For messages that require a bit of explanation, we have paragraph style alerts. These are perfect for bubbling up longer error messages, warning a user of a pending action, or just presenting information for more emphasis on the page.</p>
       <p><a class="btn js-btn" href="./javascript.html#alerts">Get the javascript &raquo;</a></p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <div class="alert-message block-message warning">
         <a class="close" href="#">&times;</a>
         <p><strong>Holy guacamole! This is a warning!</strong> Best check yo self, you’re not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
@@ -1620,12 +1555,12 @@
     <h1>Popovers <small>Components for displaying content in modals, tooltips, and popovers</small></h1>
   </div>
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Modals</h2>
       <p>Modals&mdash;dialogs or lightboxes&mdash;are great for contextual actions in situations where it’s important that the background context be maintained.</p>
       <p><a class="btn js-btn" href="./javascript.html#modal">Get the javascript &raquo;</a></p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <div class="well" style="background-color: #888; border: none; padding: 40px;">
         <!-- Modal -->
         <div class="modal" style="position: relative; top: auto; left: auto; margin: 0 auto; z-index: 1">
@@ -1647,12 +1582,12 @@
 
   <!-- Tooltips -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Tooltips</h2>
       <p>Twipsies are super useful for aiding a confused user and pointing them in the right direction.</p>
       <p><a class="btn js-btn" href="./javascript.html#twipsy">Get the javascript &raquo;</a></p>
     </div>
-    <div class="span12">
+    <div class="span=two-thirds">
       <div class="twipsies well">
         <div style="position: relative">
           <p class="muted" style="margin-bottom: 0">
@@ -1665,12 +1600,12 @@ Lorem ipsum dolar sit amet illo error <a href="#" title="below">ipsum</a> verita
 
   <!-- Popovers -->
   <div class="row">
-    <div class="span4">
+    <div class="span-one-third">
       <h2>Popovers</h2>
       <p>Use popovers to provide subtextual information to a page without affecting layout.</p>
       <p><a class="btn js-btn" href="./javascript.html#popover">Get the javascript &raquo;</a></p>
     </div>
-    <div class="span12">
+    <div class="span-two-thirds">
       <div class="well popover-well">
          <div class="popover-wrapper">
           <div class="popover left">
@@ -1698,12 +1633,12 @@ Lorem ipsum dolar sit amet illo error <a href="#" title="below">ipsum</a> verita
      <h1>Using javascript with Bootstrap <small>An index of plugins to get you started</small></h1>
    </div>
    <div class="row">
-     <div class="span4">
+     <div class="span-one-third">
        <h2>Getting started</h2>
        <p>Integrating javascript with the Bootstrap library is super easy. Below we go over the basics and provide you with some awesome plugins to get you started!</p>
        <p><a class="btn primary" href="./javascript.html">View javascript docs &raquo;</a></p>
      </div>
-     <div class="span12">
+     <div class="span-two-thirds">
       <h3>What's included</h3>
        <p>Bring some of Bootstrap's primary components to life with new custom plugins that work with <a href="http://jquery.com/" target="_blank">jQuery</a> and <a href="http://ender.no.de" target="_blank">Ender</a>. We encourage you to extend and modify them to fit your specific development needs.</p>
        <table class="zebra-striped">
@@ -1752,167 +1687,6 @@ Lorem ipsum dolar sit amet illo error <a href="#" title="below">ipsum</a> verita
    </div>
 
 
-<!-- Using Bootstrap w/ Less
-================================================== -->
-<section id="less">
-<div class="page-header">
-  <h1>Using Bootstrap with Less <small>Supercharge your CSS with variables, mixins, and functions</small></h1>
-</div>
-<div class="row">
-  <div class="span4">
-    <p>Bootstrap was built from <a href="http://markdotto.com/bootstrap/">Preboot</a>, an open-source pack of mixins and variables to be used in conjunction with <a href="http://lesscss.org" target="_blank">Less</a>, a CSS preprocessor for faster and easier web development.</p>
-    <p>Check out how we used Preboot in Bootstrap and how you can make use of it should you choose to run Less on your next project.</p>
-  </div>
-  <div class="span12">
-    <h2>How to use it</h2>
-    <p>Use this option to make full use of Bootstrap’s Less variables, mixins, and nesting in CSS via javascript in your browser.</p>
-<pre class="prettyprint linenums">
-&lt;link rel="stylesheet/less" href="less/bootstrap.less" media="all" /&gt;
-&lt;script src="js/less-1.1.3.min.js"&gt;&lt;/script&gt;</pre>
-<p>Not feeling the .js solution? <a href="http://incident57.com/less" target="_blank">Try the Less Mac app</a> or <a href="http://lesscss.org/#-client-side-usage" target="_blank">use Node.js</a> to compile when you deploy your code.</p>
-
-    <h2>What’s included</h2>
-    <p>Here are some of the highlights of what’s included in Twitter Bootstrap as part of Bootstrap. Head over to the Bootstrap website or Github project page to download and learn more.</p>
-    <h3>Variables</h3>
-    <p>Variables in Less are perfect for maintaining and updating your CSS headache free. When you want to change a color value or a frequently used value, update it in one spot and you’re set.</p>
-<pre class="prettyprint linenums">
-// Links
-@linkColor:         #8b59c2;
-@linkColorHover:    darken(@linkColor, 10);
-
-// Grays
-@black:             #000;
-@grayDark:          lighten(@black, 25%);
-@gray:              lighten(@black, 50%);
-@grayLight:         lighten(@black, 70%);
-@grayLighter:       lighten(@black, 90%);
-@white:             #fff;
-
-// Accent Colors
-@blue:              #08b5fb;
-@green:             #46a546;
-@red:               #9d261d;
-@yellow:            #ffc40d;
-@orange:            #f89406;
-@pink:              #c3325f;
-@purple:            #7a43b6;
-
-// Baseline grid
-@basefont:          13px;
-@baseline:          18px;
-</pre>
-
-<h3>Commenting</h3>
-<p>Less also provides another style of commenting in addition to CSS’s normal <code>/* ... */</code> syntax.</p>
-<pre class="prettyprint linenums">
-// This is a comment
-/* This is also a comment */
-</pre>
-
-<h3>Mixins up the wazoo</h3>
-<p>Mixins are basically includes or partials for CSS, allowing you to combine a block of code into one. They’re great for vendor prefixed properties like <code>box-shadow</code>, cross-browser gradients, font stacks, and more. Below is a sample of the mixins that are included with Bootstrap.</p>
-<h4>Font stacks</h4>
-<pre class="prettyprint linenums">
-#font {
-  .shorthand(@weight: normal, @size: 14px, @lineHeight: 20px) {
-    font-size: @size;
-    font-weight: @weight;
-    line-height: @lineHeight;
-  }
-  .sans-serif(@weight: normal, @size: 14px, @lineHeight: 20px) {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: @size;
-    font-weight: @weight;
-    line-height: @lineHeight;
-  }
-  ...
-}
-</pre>
-<h4>Gradients</h4>
-<pre class="prettyprint linenums">
-#gradient {
-  ...
-  .vertical (@startColor: #555, @endColor: #333) {
-    background-color: @endColor;
-    background-repeat: repeat-x;
-    background-image: -khtml-gradient(linear, left top, left bottom, from(@startColor), to(@endColor)); // Konqueror
-    background-image: -moz-linear-gradient(@startColor, @endColor); // FF 3.6+
-    background-image: -ms-linear-gradient(@startColor, @endColor); // IE10
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @startColor), color-stop(100%, @endColor)); // Safari 4+, Chrome 2+
-    background-image: -webkit-linear-gradient(@startColor, @endColor); // Safari 5.1+, Chrome 10+
-    background-image: -o-linear-gradient(@startColor, @endColor); // Opera 11.10
-    background-image: linear-gradient(@startColor, @endColor); // The standard
-  }
-  ...
-}
-</pre>
-
-<h3>Operations</h3>
-<p>Get fancy and perform some math to generate flexible and powerful mixins like the one below.</p>
-<pre class="prettyprint linenums">
-// Griditude
-@gridColumns:       16;
-@gridColumnWidth:   40px;
-@gridGutterWidth:   20px;
-@siteWidth:         (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
-
-// Make some columns
-.columns(@columnSpan: 1) {
-  width: (@gridColumnWidth * @columnSpan) + (@gridGutterWidth * (@columnSpan - 1));
-}
-</pre>
-
-    <h2>Compiling Less</h2>
-    <p>After modifying the <code>.less</code> files in /lib/, you'll need to recompile them in order to regenerate the bootstrap-*.*.*.css and bootstrap-*.*.*.min.css files. If you're submitting a pull request to GitHub, you must always recompile.</p>
-    <h3>Ways to compile</h3>
-    <table class="zebra-striped">
-      <thead>
-        <tr>
-          <th style="width: 120px;">Method</th>
-          <th>Steps</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Node with makefile</td>
-          <td>
-            <p>Install the less command line compiler with npm by running the following command:</p>
-            <pre>$ npm install less</pre>
-            <p>Once installed just run <code>make</code> from the root of your bootstrap directory and you're all set.</p>
-            <p>Additionally, if you have <a href="https://github.com/mynyml/watchr">watchr</a> installed, you may run <code>make watch</code> to have bootstrap automatically rebuilt every time you edit a file in the bootstrap lib (this isn't required, just a convenience method).</p>
-          </td>
-        </tr>
-          <td>Javascript</td>
-          <td>
-            <p><a href="http://lesscss.org/">Download the latest Less.js</a> and include the path to it (and Bootstrap) in the <code>head</code>.</p>
-<pre class="prettyprint linenums">
-&lt;link rel="stylesheet/less" href="/path/to/bootstrap.less"&gt;
-&lt;script src="/path/to/less.js"&gt;&lt;/script&gt;
-</pre>
-            <p>To recompile the .less files, just save them and reload your page. Less.js compiles them and stores them in local storage.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>Command line</td>
-          <td>
-            <p>If you already have the less command line tool installed, simply run the following command:</p>
-              <pre>$ lessc ./lib/bootstrap.less > bootstrap.css</pre>
-            <p>Be sure to include <code>--compress</code> in that command if you're trying to save some bytes!</p>
-          </td>
-        </tr>
-        <tr>
-          <td>Less Mac app</td>
-          <td>
-            <p><a href="http://incident57.com/less/">The unofficial Mac app</a> watches directories of .less files and compiles the code to local files after every save of a watched .less file.</p>
-            <p>If you like, you can toggle preferences in the app for automatic minifying and which directory the compiled files end up in.</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-</section>
 
 
 
@@ -1922,7 +1696,8 @@ Lorem ipsum dolar sit amet illo error <a href="#" title="below">ipsum</a> verita
       <div class="container">
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>
-          Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.<br />
+          Originaly Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.<br />
+			Updated and loved <a href="http://twitter.com/guardian">@guardian</a> by Annabel Church, Chris Cross and Michael Brunton-Spall<br />
           Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
         </p>
       </div>
